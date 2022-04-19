@@ -8,12 +8,11 @@ namespace Котополия
 {
     class ThirdBetterment : Decorator
     {
-        int Level;
-        public ThirdBetterment(Rooms cell) : base(cell.Name + " super", cell) { Level = 3; }
+        public ThirdBetterment(RoomAbstract cell) : base(cell.Name + " пупер", cell) { Level = 3; }
 
         public override int GetRent()
         {
-            return cell.GetRent() * 4;
+            return cell.GetRent() * 2;
         }
     }
 }

@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Котополия
 {
-    class Cells
+    class Cell
     {
         public string Name { get; protected set; }
-        public Cells(string name)
+        public Cell(string name)
         {
             Name = name;
         }

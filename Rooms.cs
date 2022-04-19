@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Котополия
 {
-    class Rooms : RoomsAbstract
+    class Rooms : RoomAbstract
     {
         //private string Name, Room; //room на будущее
         //private int Cost, Rent; //cost - покупка, rent - рента

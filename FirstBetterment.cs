@@ -8,8 +8,8 @@ namespace Котополия
 {
     class FirstBetterment : Decorator
     {
-        int Level;
-        public FirstBetterment(Rooms cell) : base(cell.Name + " чуть лучше обычного", cell) { Level = 1; }
+        //int Level;
+        public FirstBetterment(RoomAbstract cell) : base(cell.Name + " класс", cell) {Level = 1; }
         
         public override int GetRent()
         {

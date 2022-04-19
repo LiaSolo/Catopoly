@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace Котополия
 {
-    abstract class Decorator : RoomsAbstract
+    abstract class Decorator : RoomAbstract
     {
-        protected RoomsAbstract cell;
-        public Decorator(string betterment, RoomsAbstract cell) : base(betterment)
+        protected RoomAbstract cell;
+        public Decorator(string betterment, RoomAbstract cell) : base(cell.Cost, betterment, cell.Room)
         {
+            Owner = cell.Owner;
             this.cell = cell;
         }
     }
